@@ -1,0 +1,8 @@
+Analisei o código disponibilizado e encontrei alguns bad smells:
+- magic numbers(10, -9999, 5...)
+- variável inutilizada(int temp)
+- Ifs aninhados
+- uma parte de debug que não faz sentido estar presente no código
+
+Ajustei esses bad smells usando constantes, criando a função AvaliarNumero, fazendo a retirada da parte de debug e
+fiz com que o código seguisse o princípio de responsabilidade única
