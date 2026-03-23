@@ -1,0 +1,10 @@
+ERROS/BAD SMELLS ENCONTRADOS:
+1 - Uso de strings para representar tipo ("PDF" e "HTML")
+
+2 - If/else comparando string (Se tiver algum erro de digitação, não vai funcionar, exemplo: pdF, html...)
+
+3 - Fere o princípio de open/closed (sempre que quiser implementar algo novo, tem que mudar a função print)
+
+PÓS-REFATORAÇÃO:
+A refatoração substituiu o uso de código de tipo por polimorfismo, criando uma hierarquia de classes em que cada tipo de documento implementa seu comportamento.
+A abordagem retirou as estruturas condicionais, reduziu o acoplamento, melhorou a coesão porque cada classe passa a ter uma única responsabilidade e tornou o sistema extensível, permitindo a implementação de novos formatos sem precisar mudar o código existente.
